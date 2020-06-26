@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 
 for k in range(10000):
     plt.clf()
-    plt.imshow(np.reshape(training_data[k][0], (28,28)), cmap = 'gist_gray')
-    # net.evaluate([test_data[k][0], test_data[k][1]])
+    plt.imshow(np.reshape(validation_data[k][0], (28,28)), cmap = 'gist_gray')
+    print(net.evaluate([[validation_data[k][0], validation_data[k][1]]]))
     plt.pause(2)
 plt.show()
 
