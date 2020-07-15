@@ -11,7 +11,7 @@ training_data, validation_data, test_data = mnist_loader.load_data_wrapper()
 
 
 """
-Trying to give a 'high level view' of the digits to the network
+Trying to give a 'high level view' of the digits to the network, it shows significant improvement !
 
 """
 def generalise_shape(training_data, validation_data, test_data):
@@ -49,7 +49,9 @@ def generalise_shape(training_data, validation_data, test_data):
 
     return training_data, validation_data, test_data
 
-# transorming the dataset in order to use the network for diverse pictures, converted to black and white and flipped or sideways (usual data augmentation)
+'''
+transorming the dataset in order to use the network for diverse pictures, converted to black and white and flipped or sideways (usual data augmentation). meh results.
+'''
 
 def generalise(training_data, validation_data, test_data):
 
